@@ -47,7 +47,7 @@ header{
 }
 
 .bg{
-    background-image: url("/dawn-sunrise-scenery-wallpaper-3840x2160_54.jpg");
+    background-image: url("./dawn-sunrise-scenery-wallpaper-3840x2160_54.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
