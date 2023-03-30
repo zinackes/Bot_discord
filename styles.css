@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    font-family: "Overepass", sans-serif;
+}
+
+header{
+    margin-top: 15px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo_img{
+    width: 65px;
+    border-radius: 50%;
+    box-shadow: -4px -4px 25px 1px #65c8f8, 4px 4px 25px 1px #65c8f8;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.logo_img:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.03);
+}
+.header-list{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.header-content{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    border-color: black;
+    border: 0 solid #65c8f8;
+    transition: .2s ease-in-out;
+    display: inline-block;
+}
+.header-content:hover{
+    border-bottom-width: 3px;
+    transform: translateY(-3px);
+    color: #fff;
+    transition: .2s ease-in-out;
+}
+
+.bg{
+    background-image: url("/dawn-sunrise-scenery-wallpaper-3840x2160_54.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.blur{
+    backdrop-filter: blur(3px);
+    height: 100vh;
+    width: 100%;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title h1{
+    font-size: 70px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+    color: #fff;
+    letter-spacing: 1.2px;
+}
+.title p{
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.presentation{
+    background-color: #202225;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.presentation h1{
+    font-size: 50px;
+    position: relative;
+    color: #5a5dc0;
+    z-index: 999999;
+}
+.presentation h1:after{
+    content: "";
+    background-color: #2025b9;
+    position: absolute;
+    z-index: -3;
+    height: 40px;
+    width: 290px;
+    left: 24;
+    top: 23;
+}
+.fonctionnalites{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
