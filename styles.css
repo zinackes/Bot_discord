@@ -3,13 +3,31 @@ body{
     font-family: "Overepass", sans-serif;
 }
 
+.flex-center-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-align-center{
+    display: flex;
+    align-items: center;
+}
+.flex-justify-center{
+    display: flex;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+}
+h1,h2,h3,h4,h5,h6,p,a,button{
+    color: #fff;
+}
+
 header{
     margin-top: 15px;
-    display: flex;
     position: absolute;
     top: 0;
     z-index: 1;
-    justify-content: center;
     width: 100%;
 }
 
@@ -26,13 +44,11 @@ header{
 }
 .header-list{
     list-style: none;
-    display: flex;
     gap: 30px;
 }
 
 .header-content{
     text-decoration: none;
-    color: #1a1a1a;
     font-weight: 600;
     border-color: black;
     border: 0 solid #65c8f8;
@@ -42,7 +58,7 @@ header{
 .header-content:hover{
     border-bottom-width: 3px;
     transform: translateY(-3px);
-    color: #fff;
+    color: #7ab9d8;
     transition: .2s ease-in-out;
 }
 
@@ -55,6 +71,7 @@ header{
     backdrop-filter: blur(10px);
     min-height: 100vh;
     width: 100%;
+    box-shadow: 1px 4px 35px 1px #2025b9;
 }
 
 .blur{
@@ -67,6 +84,7 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    flex-direction: column;
 }
 .title h1{
     font-size: 70px;
@@ -74,21 +92,36 @@ header{
     text-align: center;
     margin: 0;
     line-height: 1.4;
-    color: #fff;
     letter-spacing: 1.2px;
 }
 .title p{
     text-align: center;
     margin: 0;
     font-size: 20px;
-    color: #fff;
 }
-
+.title button{
+    border: none;
+    box-shadow: -4px -4px 30px 1px #521fbe, 4px 4px 30px 1px #a750ff;
+    background: linear-gradient(90deg, #521fbe 0%, #a750ff 100%);
+    font-family: "Open Sans",sans-serif;
+    padding: 10px 27px;
+    gap: 15px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all .2s ease-in-out;
+}
+.title button svg{
+    margin-top: 4px;
+}
+.title button:hover{
+    transform: translateY(-5px);
+    transition: all .2s ease-in-out;
+}
 .presentation{
-    background-color: #202225;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #131b21;
     flex-direction: column;
 }
 .presentation h1{
@@ -106,10 +139,14 @@ header{
     width: 290px;
     left: 24;
     top: 23;
+    opacity: 0.6;
 }
-.fonctionnalites{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.fonctionnalites{   
+    gap: 20px;
     flex-wrap: wrap;
+}
+.fonctionnalite{
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
 }
